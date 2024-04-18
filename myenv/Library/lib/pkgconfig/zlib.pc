@@ -1,0 +1,13 @@
+prefix=E:/Hari/LLM/myenv/Library
+exec_prefix=E:/Hari/LLM/myenv/Library
+libdir=E:/Hari/LLM/myenv/Library/lib
+sharedlibdir=E:/Hari/LLM/myenv/Library/lib
+includedir=E:/Hari/LLM/myenv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
