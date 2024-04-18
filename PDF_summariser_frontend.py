@@ -5,25 +5,13 @@ from Documind_multifile_summariser_backend import *
 
 def main():
     #Set Page Configuration
-    st.set_page_config(page_title="Documind")
+    st.set_page_config(page_title="Summariser")
 
     #Setting up the Page Layout
-    st.title("TATA DOCUMIND")
+    st.title("DOCU SUMMARIZER")
     st.write("Summarize your confidential PDFs in seconds")
     st.divider()
-    st.markdown("""
-    <style>
-        .stTextInput {
-            position: fixed;
-            bottom: 5%;
-            width: 50%;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        </style>
-        """, unsafe_allow_html=True)
-    #st.text_input(label="",placeholder="Query your document")
-
+    
     
 
     with st.sidebar:
@@ -39,7 +27,7 @@ def main():
 
     if submit:
         st.subheader('Summary of the Files:')
-        with st.spinner("Getting your PDF Ready for Query"):
+        with st.spinner("Getting your PDF Summary Ready"):
             process_pdf_text(pdf)
 
 if __name__ == "__main__":

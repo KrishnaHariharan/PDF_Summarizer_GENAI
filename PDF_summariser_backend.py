@@ -11,7 +11,7 @@ from langchain.chains.summarize import load_summarize_chain
 from langchain.chat_models import ChatOpenAI
 
 
-
+#This Function is responsible for summarizing the PDF fules
 def multi_pdf_summariser(vectorstore):
 
     query = "Summarize the content of the uploaded PDF in 4-5 sentences. Start answer with File Name"
@@ -23,7 +23,7 @@ def multi_pdf_summariser(vectorstore):
     summary = chain.run(input_documents=docs, question = query)
     st.write(summary)
 
-
+#This Function is for embedding the text chunks & storing them FAISS vector DB
 def vector_store(text_chunks):
     #Embedding the Texts
     embeddings = OpenAIEmbeddings()
@@ -33,7 +33,7 @@ def vector_store(text_chunks):
 
     multi_pdf_summariser(vectorstore)
 
-
+#This Function is for breaking texts into group of chunks
 def get_text_chunks(raw_text):
     text_splitter = CharacterTextSplitter(
         separator = "\n",
@@ -44,6 +44,8 @@ def get_text_chunks(raw_text):
     text_chunks = text_splitter.split_text(text = raw_text)
     vector_store(text_chunks)
 
+#This function is used for extracting text from individual PDFs
+#Once text is extracted from a single PDF, get_text_chunks will be called
 def process_pdf_text(pdf):
     if pdf is not None:
         raw_text = ""
