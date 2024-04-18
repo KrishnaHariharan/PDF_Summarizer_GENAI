@@ -33,6 +33,9 @@ Employing Generative AI algorithms, the backend processes uploaded PDFs to gener
 ## Demo
 https://github.com/KrishnaHariharan/PDF_Summarizer_GENAI/blob/main/Summariser.gif
 
+## Detailed Explanation
+[Medium Blog Post](https://medium.com/@krishnahariharan/build-a-genai-based-pdf-summarizer-app-with-me-8f594c8dffdd)
+
 
 
 ## API Reference
@@ -71,4 +74,5 @@ from constants import openai_api_key
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/krishna-hariharan/)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@krishnahariharan)
 
