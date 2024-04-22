@@ -1,14 +1,14 @@
 import os
 from constants import openai_api_key
-from langchain.llms import OpenAI
+from langchain_community.llms import OpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS 
 from langchain.chains.question_answering import load_qa_chain
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain.chains.summarize import load_summarize_chain
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 
 
 #This Function is responsible for summarizing the PDF fules
