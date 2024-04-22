@@ -14,9 +14,9 @@ Users can effortlessly upload single or multiple PDF documents through a user-fr
 Employing Generative AI algorithms, the backend processes uploaded PDFs to generate concise summaries, highlighting essential information while preserving context.
 
 
-## Summariser Screenshot
+## Summarizer Screenshot
 
-![App Screenshot](https://github.com/KrishnaHariharan/PDF_Summarizer_GENAI/blob/main/summariser.png?raw=true)
+![App Screenshot](https://github.com/KrishnaHariharan/PDF_Summarizer_GENAI/blob/main/Updated%20Summariser.png)
 
 
 
@@ -31,7 +31,7 @@ Employing Generative AI algorithms, the backend processes uploaded PDFs to gener
 
 
 ## Demo
-https://github.com/KrishnaHariharan/PDF_Summarizer_GENAI/blob/main/Summariser.gif
+https://github.com/KrishnaHariharan/PDF_Summarizer_GENAI/blob/main/Updated_Summarizer_GIF.gif 
 
 ## Detailed Explanation
 [Medium Blog Post](https://medium.com/@krishnahariharan/build-a-genai-based-pdf-summarizer-app-with-me-8f594c8dffdd)
